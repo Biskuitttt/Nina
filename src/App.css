@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #eee;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+audio {
+  margin-top: 1rem;
+  filter: brightness(0.9);
+}
+
+img {
+  user-select: none;
+}
+.playButton {
+  background-color: #61dafb;
+  color: #111;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: #21a1f1; /* Slightly darker blue for hover */
+}
+
+.playButton:focus {
+  outline: none; /* Remove focus outline for better aesthetics */
+}
+
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

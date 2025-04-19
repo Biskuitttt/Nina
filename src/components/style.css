@@ -1,0 +1,174 @@
+/* Default styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: #eee;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.lyrics {
+    max-width: 600px;
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+    border-left: 3px solid #888;
+    padding-left: 1rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.polaroidImage {
+    width: 250px;
+    background-color: #fff;
+    padding: 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    color: #333;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    opacity: 1;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.polaroidImageContent {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Pixel art button style */
+.playButton {
+    background-color: #61dafb;
+    color: #111;
+    font-family: 'Press Start 2P', cursive; /* Pixel-style font */
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: 2px solid #444;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.playButton:hover {
+    background-color: #4fa3d1;
+}
+
+.playButton:active {
+    background-color: #3d8cb4;
+}
+
+/* Start button */
+.startButton {
+    background-color: #ffc0cb;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Responsive styles for iPhone 11 */
+@media only screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .lyrics {
+        max-width: 90%;
+        font-size: 1.2rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .polaroidImage {
+        width: 180px; /* Smaller image size for iPhone 11 */
+        margin-top: 15px;
+    }
+
+    .playButton {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .startButton {
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+    }
+
+    .polaroidImageContent {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust play/pause button icon size */
+    .playPauseIcon {
+        width: 30px; /* Ensure it's not too large */
+        height: 30px;
+    }
+}
+
+/* For very small screens */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .lyrics {
+        font-size: 1rem;
+    }
+
+    .polaroidImage {
+        width: 160px; /* Further reduce image size for smaller screens */
+        margin-top: 10px;
+    }
+
+    .startButton {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .playButton {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    /* Adjust play/pause button icon size */
+    .playPauseIcon {
+        width: 25px; /* Smaller icon size */
+        height: 25px;
+    }
+}
