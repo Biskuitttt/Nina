@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nina/static/css/main.76549459.css",
+    "main.js": "/nina/static/js/main.c939017d.js",
+    "index.html": "/nina/index.html",
+    "main.76549459.css.map": "/nina/static/css/main.76549459.css.map",
+    "main.c939017d.js.map": "/nina/static/js/main.c939017d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76549459.css",
+    "static/js/main.c939017d.js"
+  ]
+}
